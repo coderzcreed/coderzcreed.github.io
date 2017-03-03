@@ -1,0 +1,48 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Machine Language</title>
+        <script type="text/javascript">
+          function changeImage1()
+          {          
+          document.getElementById("imgClickAndChange").src="Sketch5.png";
+          }   
+          function changeImage2()
+          {          
+          document.getElementById("imgClickAndChange").src="Sketch4.png";
+          }   
+          function changeImage3()
+          {          
+          document.getElementById("imgClickAndChange").src="Sketch2.png";
+          }   
+          function changeImage4()
+          {          
+          document.getElementById("imgClickAndChange").src="Sketch3.png";
+          }   
+          function changeImage5()
+          {          
+          document.getElementById("imgClickAndChange").src="";
+          }   
+        </script>
+    </head>
+    <body>
+    <center><font size="44"> Machine Learning</font></center>
+    <p>
+        
+        
+    </p>
+    <center><img src="Sketch1.png" align="center" style="height:600px;width:1000px" id="imgClickAndChange"></center>
+    <p>
+        
+        
+    </p>
+    <center><input type="button" value="1" onclick="changeImage1()">
+        <input type="button" value="2" onclick="changeImage2()">
+        <input type="button" value="3" onclick="changeImage3()">
+        <input type="button" value="4" onclick="changeImage4()">
+        <input type="button" value="5" onclick="changeImage5()">
+    </center>
+    </body>
+</html>
