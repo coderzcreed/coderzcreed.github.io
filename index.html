@@ -1,47 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Machine Learning</title>
-        <script type="text/javascript">
-          function changeImage1()
-          {          
-          document.getElementById("imgClickAndChange").src="Sketch5.png";
-          }   
-          function changeImage2()
-          {          
-          document.getElementById("imgClickAndChange").src="Sketch4.png";
-          }   
-          function changeImage3()
-          {          
-          document.getElementById("imgClickAndChange").src="Sketch2.png";
-          }   
-          function changeImage4()
-          {          
-          document.getElementById("imgClickAndChange").src="Sketch3.png";
-          }   
-          function changeImage5()
-          {          
-          document.getElementById("imgClickAndChange").src="";
-          }   
-        </script>
-    </head>
-    <body>
-    <center><font size="44"> Machine Learning</font></center>
-    <p>
-        
-        
-    </p>
-    <center><img src="Sketch1.png" align="center" style="height:600px;width:1000px" id="imgClickAndChange"></center>
-    <p>
-        
-        
-    </p>
-    <center><input type="button" value="1" onclick="changeImage1()">
-        <input type="button" value="2" onclick="changeImage2()">
-        <input type="button" value="3" onclick="changeImage3()">
-        <input type="button" value="4" onclick="changeImage4()">
-        <input type="button" value="5" onclick="changeImage5()">
-    </center>
-    </body>
+<head>
+<title>Coder'z Creed</title>
+<meta charset="utf-8">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><a href="index.html">Coder'z Creed</a></h1>
+      <p>We Could So We Do</p>
+    </div>
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Discussion</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div id="slider"> 
+    <!-- ############################################################################################################# -->
+    <div id="slidewrap">
+      <div class="heading"><span id="slidecaption"></span></div>
+    </div>
+    <!-- ############################################################################################################# --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main id="container" class="clear"> 
+    <!-- container body --> 
+    <!-- ########################################################################################## -->
+    <ul class="nospace push50 center clear">
+      <li class="one_quarter">
+        <div class="push30"><span class="icon-group icon-4x"></span></div>
+        <h6 class="push10">Founder</h6>
+        <p class="nospace push10">Krishnan P.J the founder of Coder'z Creed.</p>
+        <p class="nospace"><a href="#">Read more &raquo;</a></p>
+      </li>
+      <li class="one_quarter">
+        <div class="push30"><span class="icon-trophy icon-4x"></span></div>
+        <h6 class="push10">President</h6>
+        <p class="nospace push10">Prathap Dominicsavio the president of Coder'z Creed.</p>
+        <p class="nospace"><a href="#">Read more &raquo;</a></p>
+      </li>
+    </ul>
+    <!-- ########################################################################################## --> 
+    <!-- / container body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h6 class="title">About</h6>
+      <address class="push30">
+      Coder'z Creed <br>
+      Alapakam Street<br>
+      Chengalpattu<br>
+      603003
+      </address>
+      <ul class="nospace">
+        <li class="push10"><span class="icon-time"></span> Mon. - Sat. 8:30am - 4:30pm</li>
+        <li class="push10"><span class="icon-phone"></span> +91 8056148755</li>
+        <li><span class="icon-envelope-alt"></span> coderzcreed@gmail.com</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ --> 
+  </footer>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Coder'z Creed</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="" title=" Website by">Coder'z Creed</a></p>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="layout/scripts/jquery.min.js"></script> 
+<script src="layout/scripts/supersized/supersized.min.js"></script> 
+<script>
+jQuery(function ($) {
+    $.supersized({
+		slide_interval: 8000,
+		transition: 1,
+		transition_speed: 800,
+        slides: [{
+            image: 'images/demo/slider/1.png',
+            title: '<span class="heading">Prathap Dominicsavio</span>President<br><a class="rounded" href="#">view here</a>'
+        }, {
+            image: 'images/demo/slider/2.png',
+            title: '<span class="heading">Krishnan P.J</span>Founder<br><a class="rounded" href="#">view here</a>'
+        }]
+    });
+});
+</script>
+</body>
 </html>
